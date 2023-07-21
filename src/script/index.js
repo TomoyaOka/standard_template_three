@@ -1,11 +1,11 @@
 import Stage from "./modules/stage.js";
-import Mesh from "./modules/mesh.js";
+import Model from "./modules/mesh.js";
 
 let stage,mesh;
 
 function rendering() {
   stage = new Stage();
-  mesh = new Mesh(stage);
+  mesh = new Model(stage);
 
   stage._init();
   mesh._init();

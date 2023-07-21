@@ -1,6 +1,6 @@
-import * as THREE from "three";
+import { MeshNormalMaterial,BoxGeometry,Mesh } from "three";
 
-export default class Mesh {
+export default class Model {
   constructor(stage) {
     this.stage = stage;
     this.geometry;
@@ -19,9 +19,9 @@ export default class Mesh {
       z:0.5
     }
     
-    this.geometry = new THREE.BoxGeometry(size.x,size.y,size.z);
-    this.material = new THREE.MeshNormalMaterial();
-    this.mesh = new THREE.Mesh(this.geometry,this.material);
+    this.geometry = new BoxGeometry(size.x,size.y,size.z);
+    this.material = new MeshNormalMaterial();
+    this.mesh = new Mesh(this.geometry,this.material);
     this.stage.scene.add(this.mesh);
   }
 }
