@@ -14,4 +14,4 @@
 
 
 # Preview
-https://tomoyaoka.github.io/standard_template_three.js/
+https://tomoyaoka.github.io/standard_template_three/
